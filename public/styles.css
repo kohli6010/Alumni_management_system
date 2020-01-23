@@ -1,76 +1,106 @@
-body{
-	padding: 0px;
-	box-sizing: border-box;
-	font-family: Consolas;
-	width: 100vw;
-	margin: 0 auto;
+body {
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Consolas;
+    width: 100vw;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    margin: 0 auto;
 }
 
-.navbar{
+.navbar {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    color: #0078d4;
+    width: 100vw;
+    height: 100px;
+    margin: 0 auto;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.nav-content {
+    width: 1300px;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.navbar > .nav-content > .logo {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 70%;
+    height: 100%;
+}
+
+.navbar > .nav-content > .logo > img {
+    height: 100px;
+    width: 100px;
+}
+
+.navbar > .nav-content > .logo > .head > h4 {
+    text-align: right;
+}
+
+.buttons {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: end;
+    width: 25%;
+}
+
+nav > .nav-content > .buttons > div > button {
+    width: 100px;
+    height: 40px;
+    border: none;
+    background-color: #0078d4;
+    color: white;
+    margin: 10px;
+    outline: none;
+}
+
+nav > .nav-content > .buttons > div > button:hover {
+    background-color: #0265b1;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100vw;
+	margin: 20px auto;
+}
+
+main > .content{
 	display: flex;
 	flex-wrap: nowrap;
-	justify-content: space-around;
-	color: #0078d4;
-	align-items: baseline;
 	width: 1300px;
-	height: 100px;
 	margin: 0 auto;
+	justify-content: center;
 }
 
-.navbar  > .logo{
-	width: 70%;
+.item > img {
+    width: 100%;
+    height: 100%;
 }
 
-.buttons{
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: end;
-	width: 30%;
+.carousel {
+    width: 60%;
+    height: 80%;
 }
 
-nav > .buttons > div > button{
-	width: 100px;
-	height: 40px;
-	border: none;
-	background-color: #0078d4;
-	color: white;
-	margin: 10px;
-	outline: none; 
-}
-
-nav > .buttons > div > button:hover{
-	background-color: #0265b1;
-}
-
-main{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;	
-	width: 100vw;
-	margin: 0 auto;	
-}
-
-.item > img{
-	width: 100%;
-}
-
-.carousel{
-	width: 70%;
-	height: 80%;
-}
-
-.notices{
-	width: 30%;
-	text-align: center;
+main > .content > .notices {
+    width: 30%;
+    text-align: center;
 	height: 100%;
 }
 
-li{
-	list-style: none;
+li {
+    list-style: none;
 }
 
-.about-us{
-	background-color: rgb(216, 216, 216);
-	text-align: center;
-	width: 100vw;
+.about-us {
+    background-color: rgb(216, 216, 216);
+    text-align: center;
+    width: 100vw;
 }
