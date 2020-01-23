@@ -19,7 +19,13 @@ def create_event():
     pass
 
 
+def publish_notice():
+    pass
+
+
 def update_info():
     pass
 
 
+def login_college():
+    pass
