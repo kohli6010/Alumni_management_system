@@ -49,6 +49,10 @@ body {
 	width: 30%;
 }
 
+button{
+    outline: none;
+}
+
 .button {
     width: 100px;
     height: 40px;
@@ -171,7 +175,8 @@ main > .content > .notices > ul > li {
     top: 120px;
     left: 400px;
     background-color: white;
-    /* display: none; */
+    display: none;
+    transform: translateY(-150%);
 }
 
 .login-popup > .container{
@@ -216,15 +221,34 @@ main > .content > .notices > ul > li {
     align-items: center;
 }
 
+
 .login-popup > .container > .other-content > .inputs > label, input{
     width: 100%;
     padding: 10px;
 }
 
-.cancel{
-    font-size: 3em;
-    display: flex;
-    flex-wrap:nowrap;
-    justify-content: flex-end;  
-    width: 100%;
+.login-popup > .container > .other-content > .inputs > input:hover {
+    border: 1px solid #0078d4;
 }
+
+.cancel{
+    text-align: end; 
+    width: 100%;
+    cursor: pointer;
+}
+
+.login-pop-animation{
+   display: block;
+   animation: popup 0.8s;
+   animation-fill-mode: forwards;
+   transition: all;
+}
+
+ @keyframes popup{
+     0%{
+         transform: translateY(-100%);
+     }
+     100%{
+         transform: translateY(0%);
+     }
+} 
