@@ -227,10 +227,6 @@ main > .content > .notices > ul > li {
     padding: 10px;
 }
 
-.login-popup > .container > .other-content > .inputs > input:hover {
-    border: 1px solid #0078d4;
-}
-
 .cancel{
     text-align: end; 
     width: 100%;
