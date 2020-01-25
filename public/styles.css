@@ -49,7 +49,7 @@ body {
 	width: 30%;
 }
 
-nav > .nav-content > .buttons > div > button {
+.button {
     width: 100px;
     height: 40px;
     border: none;
@@ -59,7 +59,7 @@ nav > .nav-content > .buttons > div > button {
     outline: none;
 }
 
-nav > .nav-content > .buttons > div > button:hover {
+.button:hover {
     background-color: #0265b1;
 }
 
@@ -166,4 +166,65 @@ main > .content > .notices > ul > li {
     font-size: 18px;
 }
 
+.login-popup{
+    position: absolute;
+    top: 120px;
+    left: 400px;
+    background-color: white;
+    /* display: none; */
+}
 
+.login-popup > .container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 600px;           
+    padding: 30px;
+    width: 600px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-popup > .container > .img-div{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-popup > .container > .img-div > .image{
+    width: 100%;
+    text-align: center;    
+}
+
+.login-popup > .container > .other-content{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.login-popup > .container > .other-content > h3{
+    width: 100%;
+    text-align: center;
+}
+
+.login-popup > .container > .other-content > .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-popup > .container > .other-content > .inputs > label, input{
+    width: 100%;
+    padding: 10px;
+}
+
+.cancel{
+    font-size: 3em;
+    display: flex;
+    flex-wrap:nowrap;
+    justify-content: flex-end;  
+    width: 100%;
+}
