@@ -291,43 +291,64 @@ main > .content > .notices > ul > li {
 
 footer{
     background-color: rgb(216, 216, 216);
-    display: flex; 
+    height: 250px;
+    display: flex;
+    justify-content: center;
+}
+
+footer > .contributors {
+    display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    height: 200px;
+    width: 100%;
 }
 
-footer > .contributors{
+footer > .contributors > .sih {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    width: 30%; 
 }
 
-footer > .contributors > h3{
+footer > .contributors > .sih > h2{
     width: 100%;
     text-align: center;
-    display: flex;
-    flex-wrap: nowrap;
-    justify-content: center;
 }
 
-footer > .contributors > .contributors-list {
-    list-style: none;
-    font-weight: 800;
+footer > .contributors > .sih > .sih-img{
+    width: 80%;
+}
+
+footer > .contributors > .sih > .sih-img > img{
+    width: 100%;
+}
+
+
+
+footer > .contributors > .contributors-list{
     display: flex;
     flex-wrap: wrap;
-    padding: 0;
-    text-align: end;
-}
-
-footer > .contributors > ul > li{
-    width: 100%;
-    text-align: center;
-    display: flex;
-    justify-content: space-between;
-}
-
-footer > .contributors > ul > li > .name{
+    justify-content: center;
     width: 50%;
+}
+
+footer > .contributors > .contributors-list > h3{
+    width: 100%;
+    text-align: center;
+}
+
+footer > .contributors > .contributors-list > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    list-style-type: none;
+    width: 100%;
+    padding: 0;
+}
+
+
+footer > .contributors > .contributors-list > ul > li{ 
+    width: 100%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 1.3em;
 }
