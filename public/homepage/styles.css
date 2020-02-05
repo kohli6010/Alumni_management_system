@@ -263,7 +263,7 @@ main > .content > .notices > ul > li {
 }
 
 .login-pop-remove-animation{
-    animation: popup-remove. 0.8s;
+    animation: popup-remove 0.8s;
     animation-fill-mode: forwards;
     transition: all;
 }
@@ -294,34 +294,40 @@ footer{
     display: flex; 
     flex-wrap: wrap;
     justify-content: space-around;
+    height: 200px;
 }
 
 footer > .contributors{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 30%; 
 }
 
 footer > .contributors > h3{
     width: 100%;
     text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
 }
 
-footer > .contributors {
-    width: 50%;
-}
-
-footer > .contributors > ul {
+footer > .contributors > .contributors-list {
     list-style: none;
     font-weight: 800;
     display: flex;
     flex-wrap: wrap;
+    padding: 0;
+    text-align: end;
 }
 
 footer > .contributors > ul > li{
     width: 100%;
     text-align: center;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
+footer > .contributors > ul > li > .name{
+    width: 50%;
+}
