@@ -233,14 +233,20 @@ main > .content > .notices > ul > li {
     cursor: pointer;
 }
 
-.login-pop-animation{
+.login-pop-add-animation{
    display: block;
-   animation: popup 0.8s;
+   animation: popup-add 0.8s;
    animation-fill-mode: forwards;
    transition: all;
 }
 
- @keyframes popup{
+.login-pop-remove-animation{
+    animation: popup-remove 0.8s;
+    animation-fill-mode: forwards;
+    transition: all;
+}
+
+ @keyframes popup-add{
      0%{
          transform: translateY(-100%);
      }
@@ -248,3 +254,13 @@ main > .content > .notices > ul > li {
          transform: translateY(0%);
      }
 } 
+
+@keyframes popop-remove{
+    0%{
+        transform: translateY(0%);
+    }
+    100%{
+        transform: translateY(-100%);
+        display: none;
+    }
+}
