@@ -49,6 +49,20 @@ body {
 	width: 30%;
 }
 
+.other-content > .inputs > form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;   
+}
+
+.other-content > .inputs > input {
+    margin: 10px;
+}
+
+.other-content > .inputs > form > button {
+    margin: 20px;
+}
+
 button{
     outline: none;
 }
@@ -61,6 +75,7 @@ button{
     color: white;
     margin: 10px;
     outline: none;
+    border: 2px solid;
 }
 
 .button:hover {
@@ -95,6 +110,8 @@ main > .content {
     margin-right: 20px;
 }
 
+/* Notices and main Content */
+
 main > .content > .notices {
     width: 30%;
     height: 100%;
@@ -124,6 +141,8 @@ main > .content > .notices > ul > li {
     margin: 10px;
 }
 
+/* About Us */
+
 #about-us {
     background-color: rgb(216, 216, 216);
     text-align: center;
@@ -149,6 +168,8 @@ main > .content > .notices > ul > li {
 	font-size: 16px;
 }
 
+/* Colleges part */
+
 #colleges{
     display: flex;
     flex-wrap: wrap;
@@ -170,6 +191,7 @@ main > .content > .notices > ul > li {
     font-size: 18px;
 }
 
+/* Login popup */
 .login-popup{
     position: absolute;
     top: 120px;
@@ -241,7 +263,7 @@ main > .content > .notices > ul > li {
 }
 
 .login-pop-remove-animation{
-    animation: popup-remove 0.8s;
+    animation: popup-remove. 0.8s;
     animation-fill-mode: forwards;
     transition: all;
 }
@@ -264,3 +286,42 @@ main > .content > .notices > ul > li {
         display: none;
     }
 }
+
+/* Footer */
+
+footer{
+    background-color: rgb(216, 216, 216);
+    display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+footer > .contributors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+footer > .contributors > h3{
+    width: 100%;
+    text-align: center;
+}
+
+footer > .contributors {
+    width: 50%;
+}
+
+footer > .contributors > ul {
+    list-style: none;
+    font-weight: 800;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+footer > .contributors > ul > li{
+    width: 100%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+

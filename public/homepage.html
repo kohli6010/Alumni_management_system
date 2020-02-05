@@ -15,6 +15,7 @@
 	<title>Alumni_management_system</title>
 </head>
 <body>
+	<!-- Navbar Starting -->
 	<nav class="navbar">
 		<div class="nav-content">
 			<div class="logo">
@@ -37,6 +38,7 @@
 			</div>
 		</div>
 	</nav>
+	<!-- Navbar ending -->
 	<main>
 		<div class="content">
 			<div id="myCarousel" class="carousel slide" data-ride="carousel">
@@ -137,17 +139,35 @@
 			<div class="other-content">
 				<h3>Login with college credentials</h3>
 				<div class="inputs">
+					<form action="cgi-bin/login_controller.py" method="post">
 					<label for="college-email">College Email</label>
-					<input type="email" name="college-email" id="college-email"/>
+					<input type="email" name="college_email" id="college-email"/>
 					<label for="password">Password</label>
-					<input type="password" name="password" id="password"/>
-					<input type="button" value="Login" class="button">
+					<input type="password" name="college_pwd" id="password"/>
+					<button class="button">Login</button>
+				</form>
 				</div>
 			</div>
 		</div>
 	</div>
 	<footer>
-		
+		<div class="contributors">
+			<h3>Contributors</h3>
+			<ul class="contributors-list">
+				<li>
+					<div class="name">Prachi Aggarwal</div> 
+					<div class="github">
+						Github: <a href="">prachi0112</a>
+					</div> 
+				</li>
+				<li>Gautam Gupta Github: <a href="">gautamgupta1811</a></li>
+				<li>Ujjwal kumar Github: <a href="">Ujjwal110599</a></li>
+				<li>Prachi Sachdeva</li>
+				<li>Priyanka Garg</li>
+				<li>Rahul Github: <a href="">kohli6010</a></li>
+				</ul>
+		</div>
+		<h3>For SIH 2020</h3>
 	</footer>
 </body>
 <script src="./script.js"></script>
