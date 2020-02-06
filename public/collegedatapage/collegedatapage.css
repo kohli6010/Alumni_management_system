@@ -1,0 +1,38 @@
+.data-filter {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+table {
+    font-size: 0.8em;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+tr:nth-child(2n) {
+	width: 15%;
+	background-color: azure;
+}
+.filter {
+    width: 300px;
+    height: 400px;
+    margin: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+.filter{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.search {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	height: 10%;
+	margin: 20px;
+	box-sizing: border-box;
+}
+
