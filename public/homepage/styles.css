@@ -80,7 +80,6 @@ button{
     color: white;
     margin: 10px;
     outline: none;
-    border: 2px solid;
 }
 
 .button:hover {

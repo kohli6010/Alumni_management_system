@@ -1,4 +1,12 @@
 /* Events Grid */
+.buttons{
+    width: 40%;
+}
+
+.logo{
+    width: 60%
+}
+
 .events {
     display: flex;
     flex-wrap: wrap;
