@@ -79,48 +79,6 @@
 
 /* Notice popup */
 
-.flipcard{
-    position: absolute;
-    top: 150px;
-    width: 400px;
-    height: 400px;
-    perspective: 1000px;
-    font-family: Sans-Serif;
-    margin: 0 auto;
-    display: none;
-
-}
-
-.flipcard-inner{
-    position: relative;
-    height: 100%;
-    width: 100%;
-    text-align: center;
-    transition: transform 0.9s;
-    transform-style: preserve-3d;
-}
-
-.flipcard:hover .flipcard-inner{
-    transform: rotateY(180deg);
-}
-
-.flipcard-front, .flipcard-back{
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    backface-visibility: hidden;
-}
-
-.flipcard-back{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: white;
-    color: black;
-    transform: rotateY(180deg);
-    background-color: rgb(216, 216, 216);
-}
-
 .date{
     width: 100%;
     display: flex;
